@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Exercices DOM</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body>
+    <!--EXERCICE 1-->
+    <label for="num1">Nombre 1 :</label>
+    <input type="number" id="num1"><br><br>
+    <label for="num2">Nombre 2 :</label>
+    <input type="number" id="num2"><br><br>
+    <button onclick="multiplication()">Multiplier</button><br>
+    <p>Résultat : <span id="resultat"></span></p><br>
+
+    <!--EXERCICE 2-->
+    <p id="texte">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat voluptatibus sed animi deleniti earum
+        qui eveniet, odio saepe beatae suscipit et dolore quisquam blanditiis quibusdam excepturi pariatur? Doloribus,
+        doloremque aperiam.</p>
+    <button id="toggleButton">Afficher/Cacher</button><br><br>
+
+    <!--EXERCICE 3-->
+    <label for="colorinput">Entrer un code couleur en hexadécimal valide :</label>
+    <input type="text" id="colorinput" placeholder="Ex : #ff00ff">
+    <button onclick="getEnteredColor()">Changer la couleur</button><br><br>
+
+    <label for="colorPicker"></label>
+    <input type="color" id="colorPicker">
+    <button onclick="applyColor()">OK</button><br><br>
+
+    <!--EXERCICE 4-->
+    <label for="imageAdress">Entrer l'adresse de l'image</label>
+    <input type="text" id="imageAdress">
+    <button onclick="afficheImage()">Ajouter l'image</button>
+    <img id="imageAffichee" src=""><br><br>
+
+     <!--EXERCICE 5-->
+    <label for="modulo">Entrer un nombre</label>
+    <input type="number" id="modulo">
+    <button onclick="modulable()">Push</button>
+    <span id="reste"></span>
+    <p id="text"><span></span></p>
+
+    <!--EXERCICE 6-->
+    <label for="ageUser">Entrer âge :</label>
+    <input type="number" id="ageUser">
+    <button onclick="age()">Jours vécus</button>
+    <span id="texage"></span><br><br>
+
+    <!--EXERCICE 7-->
+    <label for="ageUsers">Age actuel</label>
+    <input type="number" id="ageUsers">
+    <label for="ageVise">Age visé</label>
+    <input type="number" id="ageVise">
+    <button onclick="ecartAge()">Différence</button>
+    <span id="nbjours"></span><br><br>
+
+    <!--EXERCICE 8-->
+    <h1>Veuillez cliquer pour voir la suite !</h1>
+    <button onclick="ouiounon()">Confirmer</button><br><br>
+
+    <!--EXERCICE 9-->
+    <form>
+    <label for="numberInput">Entrez un nombre entre 0 et 5 :</label>
+    <input type="number" id="numberInput" min="0" max="5">
+    <button type="button" onclick="checkNumber()">Valider</button>
+    </form><br><br>
+
+    <!--EXERCICE 10-->
+    <h1>Liste de courses</h1>
+    <input type="text" id="nouveauProduit" placeholder="Ajouter un produit">
+    <button onclick="ajouterProduit()">Ajouter produit</button>
+    <ul id="listeCourses">
+        <li>pain</li>
+        <li>lait</li>
+        <li>fromage</li>
+        <li>fruits</li>
+        <li>oeufs</li>
+    </ul>
+    
+  
+     <!--EXERCICE 11-->
+     <h1>Devinez le nombre !</h1>
+
+     <p>Entrez un nombre entre 1 et 100 :</p>
+     <input type="number" id="userGuess" placeholder="Entrez votre essai">
+     <button onclick="checkGuess()">Vérifier</button>
+     <p id="result"></p>
+
+
+    <!--EXERCICE 12-->
+    <h1>Devinez le nombre !</h1>
+
+    <p>Devinez un nombre entre 1 et 100 en 3 essais maximum.</p>
+    <input type="number" id="essai" placeholder="Entrez votre essai">
+    <button onclick="devinerNombre()">Vérifier</button>
+    <p id="final"></p>
+     
+
+
+    <!--EXERCICE 13-->
+    <p>Voulez-vous continuez ?</p>
+    <button onclick="Confirmation(true)">OUI</button>
+    <button onclick="Confirmation(false)">NON</button><br><br>
+    
+
+    <!--EXERCICE 14-->
+    <style>
+        /* Style pour la mise en forme de la liste */
+        .book-list {
+          list-style: none;
+          padding: 0;
+        }
+        .book-item {
+          border: 1px solid #ccc;
+          margin: 5px;
+          padding: 10px;
+        }
+        .book-image {
+          max-width: 100px;
+          height: auto;
+        }
+      </style>
+
+    <button onclick="filterBooks('css')">CSS</button>
+    <button onclick="filterBooks('js')">JS</button>
+    <ul id="bookList" class="book-list"></ul>
+
+   
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
